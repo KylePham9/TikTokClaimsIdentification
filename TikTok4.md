@@ -394,14 +394,12 @@ data.isna().sum()
 
 ```python
 # Drop rows with missing values
-### YOUR CODE HERE ###
 data = data.dropna(axis = 0)
 ```
 
 
 ```python
 # Display first few rows after handling missing values
-### YOUR CODE HERE ###
 data.head()
 ```
 
@@ -677,7 +675,6 @@ data_upsampled["verified_status"].value_counts()
 
 ```python
 # Get the average `video_transcription_text` length for claims and the average `video_transcription_text` length for opinions
-### YOUR CODE HERE ###
 data_upsampled[["verified_status", "video_transcription_text"]].groupby(by="verified_status")[["video_transcription_text"]].agg(func=lambda array: np.mean([len(text) for text in array]))
 ```
 
