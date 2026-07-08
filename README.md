@@ -469,7 +469,6 @@ print(f'Median under review author video share count {under_review_median}')
 
 
 ```python
-### YOUR CODE HERE ###
 data.groupby(['author_ban_status']).agg({
     'video_view_count': ['count', 'mean', 'median'],
     'video_like_count': ['count', 'mean', 'median'],
@@ -586,7 +585,6 @@ data['shares_per_view'] = data['video_share_count'] / data['video_view_count']
 
 
 ```python
-### YOUR CODE HERE ###
 data.groupby(['claim_status', 'author_ban_status']).agg({
     'likes_per_view': ['count', 'mean', 'median'],
     'comments_per_view': ['count', 'mean', 'median'],
